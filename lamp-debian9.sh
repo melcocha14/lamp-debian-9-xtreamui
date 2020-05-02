@@ -71,7 +71,7 @@ echo -e "${jeshile} ¦    Descargando configuracion de mysql     ¦ \e[0m"
 echo -e "${jeshile} +-------------------------------------------+ \e[0m"
 sleep 3
 
-wget "http://xtreme.dynns.com:5000/apk/xtream/mysql-apt-config_0.8.15-1_all.deb"
+wget https://github.com/melcocha14/lamp-debian-9-xtreamui/raw/master/tools/mysql-apt-config_0.8.15-1_all.deb
 
 
 echo -e "${jeshile} +-------------------------------------------+ \e[0m"
@@ -274,7 +274,7 @@ sleep 3
 
 apt install python -y
 apt install python-paramiko -y
-wget https://xtream-ui.com/install/install.py
+wget https://raw.githubusercontent.com/melcocha14/lamp-debian-9-xtreamui/master/tools/install.py
 
 
 
