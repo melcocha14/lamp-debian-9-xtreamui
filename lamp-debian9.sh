@@ -103,10 +103,11 @@ apt install mysql-community-server -y
 echo " "
 echo -e "${jeshile} +-------------------------------------------------------+ \e[0m"
 echo -e "${jeshile} ¦    Configurando seguridad MYSQL                       ¦ \e[0m"
-echo -e "${jeshile} ¦                                                       ¦ \e[0m"
-echo -e "${jeshile} ¦  *****  Te pedira la contraseña root de mysql  *****  ¦ \e[0m"
 echo -e "${jeshile} ¦    Tu contraseña de Mysql es $CONTRAMYSQL             ¦ \e[0m"
 echo -e "${jeshile} ¦                                                       ¦ \e[0m"
+echo -e "${jeshile} ¦  *****  Las primeras 2 opciones le dices N  *****     ¦ \e[0m"
+echo -e "${jeshile} ¦                                                       ¦ \e[0m"
+echo -e "${jeshile} ¦VALIDATE PASSWORD PLUGIN                   presiona n  ¦ \e[0m"
 echo -e "${jeshile} ¦Change the password for root ?             presiona n  ¦ \e[0m"
 echo -e "${jeshile} ¦                                                       ¦ \e[0m"
 echo -e "${jeshile} ¦  *****  Las siguientes 4 opciones le dices Y  *****   ¦ \e[0m"
@@ -263,7 +264,7 @@ sleep 3
 
 wget https://raw.githubusercontent.com/melcocha14/lamp-debian-9-xtreamui/master/tools/libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
 dpkg -i libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb 
-
+rm libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
 
 
 echo -e "${jeshile} +---------------------------+ \e[0m"
@@ -294,7 +295,7 @@ echo -e "${jeshile} ¦                                                          
 echo -e "${jeshile} ¦                                                          ¦ \e[0m"
 echo -e "${jeshile} ¦      Datos de acceso Mysql                               ¦ \e[0m"
 echo -e "${jeshile} ¦      Usuario: 	root                                   ¦ \e[0m"
-echo -e "${jeshile} ¦      Contraseña: 	$CONTRAPHP                             ¦ \e[0m"
+echo -e "${jeshile} ¦      Contraseña: 	$CONTRAMYSQL                           ¦ \e[0m"
 echo -e "${jeshile} ¦                                                          ¦ \e[0m"
 echo -e "${jeshile} ¦      Guarda tus Datos en un lugar seguro                 ¦ \e[0m"
 echo -e "${jeshile} ¦                                                          ¦ \e[0m"
