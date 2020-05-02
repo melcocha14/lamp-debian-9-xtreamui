@@ -10,8 +10,13 @@ luego ejecutar esta instruccion
 wget https://raw.githubusercontent.com/melcocha14/lamp-debian-9-xtreamui/master/lamp-debian9.sh && chmod +x lamp-debian9.sh && ./lamp-debian9.sh
 
 
+Nota en la seleccion de Mysql seleccion la version 5.6 para mayor compatibilidad
+
+
+
 Aveces marca error de permisos al ejecutar XtreamUi
 Con este comando los resuelves
 
-chmod +x /home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx 
+chmod +x /home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx
+
 chmod +x /home/xtreamcodes/iptv_xtream_codes/nginx_rtmp/sbin/nginx_rtmp 
